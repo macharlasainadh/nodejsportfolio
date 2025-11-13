@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sayan-adhikary.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Allow specific paths
+Allow: /about
+Allow: /skills
+Allow: /education
+Allow: /projects
+Allow: /contact
+
+# Block admin areas (if any in the future)
+Disallow: /admin/
+Disallow: /private/
