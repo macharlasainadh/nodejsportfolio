@@ -251,7 +251,7 @@ export function HeroSection() {
 
               {/* Resume Button */}
               <motion.a
-                href="https://drive.google.com/file/d/1rFUztRWi1Qol9hcYU0YyBQq5jltDIktb/view?usp=drive_link"
+                href="sairesume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white bg-gradient-to-r from-[#007BFF] to-[#6F00FF] hover:from-[#6F00FF] hover:to-[#007BFF] px-8 py-3 rounded-full font-semibold shadow-[0_0_20px_#007BFF80] hover:shadow-[0_0_30px_#6F00FF80] transition-all duration-300 flex items-center space-x-2"
@@ -353,7 +353,7 @@ export function HeroSection() {
                   >
                     <Image
                       src="/portfolio image.jpg"
-                      alt="Sayan Adhikary Profile Picture"
+                      alt="Sainadh Macharla Profile Picture"
                       width={400}
                       height={400}
                       className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"

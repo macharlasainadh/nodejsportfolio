@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://sayan-adhikary.com/sitemap.xml
+Sitemap: https://macharlasainadh.com/sitemap.xml
 
 # Crawl delay
 Crawl-delay: 1

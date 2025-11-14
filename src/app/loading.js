@@ -36,7 +36,7 @@ export default function Loading() {
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-500 to-pink-600"
           >
-            SAYAN ADHIKARY
+            SAINADH MACHARLA
           </motion.h1>
         </motion.div>
 

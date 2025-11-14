@@ -561,9 +561,9 @@ export default function Home() {
                             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500/20 to-indigo-600/20 px-4 py-2 rounded-full border border-blue-500/30">
                               <IconTrophy
                                 size={16}
-                                className="text-orange-400"
+                                className="text-green-400"
                               />
-                              <span className="text-orange-300 font-medium">
+                              <span className="text-green-300 font-medium">
                                 {edu.grade}
                               </span>
                             </div>
@@ -893,7 +893,7 @@ export default function Home() {
                     <IconBrandGithub size={24} className="text-blue-400" />
                   </motion.a>
                   <motion.a
-                    href="https://drive.google.com/file/d/1rFUztRWi1Qol9hcYU0YyBQq5jltDIktb/view?usp=drive_link"
+                    href="sairesume.pdf"
                     target="_blank"
                     className="p-3 bg-gradient-to-br from-gray-700/50 to-gray-800/50 rounded-lg border border-gray-600/30 hover:border-blue-500/50 transition-all duration-300"
                     whileHover={{ scale: 1.1, y: -2 }}
