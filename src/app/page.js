@@ -311,22 +311,23 @@ export default function Home() {
       live: "https://weather-app-eight-livid-25.vercel.app/",
     },
     {
-      title: "Data Analyzer CLI Tool",
+      title: "Car Rental System",
       description:
-        "• Engineered a modular CLI tool to automate data cleaning, analysis, and visualization for CSV/Excel datasets up to 1M+ rows, cutting manual analysis time by 70%. • Designed 12+ analytical features including summary stats, filtering, groupby, correlation heatmaps, and multi-type charts (bar/line/hist/pie), improving data insights 3× faster. • Automated report exports (CSV, PNG, consolidated PDF), boosting reporting efficiency by 60% for repetitive workflows.",
-      image: "/Screenshot 2025-09-11 112027.png", // Updated to use the Data Analyzer CLI Tool screenshot
-      tech: ["Python", "Pandas", "Matplotlib", "argparse"],
-      github: "https://github.com/sayanadhi03/data-anlyzer",
-      live: "https://github.com/sayanadhi03/data-anlyzer",
+        "• Developed a full-stack Car Rental System where users can browse cars, check availability, and make bookings with automated pricing and billing. • Implemented secure authentication, role-based access (Admin & Customer), and complete workflows for car management, booking approvals, and rental history tracking. • Built responsive dashboards and real-time availability updates, improving operational efficiency and reducing manual processes by 60%.",
+        image: "/Screenshot 2025-09-11 112027.png",
+        tech: ["Python", "Django", "SQLite / PostgreSQL", "HTML", "CSS", "JavaScript"],
+        github: "https://github.com/sayanadhi03/car-rental-system",   
+        live: "https://car-rental-system-demo.vercel.app",            
+
     },
     {
-      title: "LangChain Demo with Llama3.2",
+      title: "Hospital Management System",
       description:
-        "• Built a local AI-powered chatbot integrating LangChain with Ollama's LLaMA 3.2 model for conversational AI capabilities. • Implemented conversational memory, prompt chaining, and context-aware responses for enhanced user interactions. • Deployed as a lightweight local application using Streamlit, demonstrating practical LLM integration and deployment strategies.",
-      image: "/Screenshot 2025-10-02 121538.png", // Updated to use the LangChain Demo screenshot
-      tech: ["Streamlit", "LangChain", "Ollama"],
-      github: "https://github.com/sayanadhi03/Agentic-AI",
-      live: "https://github.com/sayanadhi03/Agentic-AI",
+        "• Developed and containerized a Hospital Management System and implemented a complete CI/CD pipeline using GitHub Actions for automated build, test, and deployment processes. • Set up Docker-based environments and automated workflows for code quality checks, unit testing, and seamless deployment to staging and production servers. • Improved deployment reliability and reduced release time by 80% through automated pipeline triggers, versioning, and environment-specific configuration management.",
+      image: "/HMS.png", 
+      tech: ["Python", "Django", "Docker", "GitHub Actions", "CI/CD", "PostgreSQL"],
+      github: "https://github.com/sayanadhi03/hospital-management-cicd",  
+      live: "https://hospital-management-cicd-demo.vercel.app",           
     },
   ];
 
