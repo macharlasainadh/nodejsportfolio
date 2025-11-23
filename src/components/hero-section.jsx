@@ -352,7 +352,7 @@ export function HeroSection() {
                     transition={{ delay: 0.7, duration: 0.6, ease: "backOut" }}
                   >
                     <Image
-                      src="/portfolio image.jpg"
+                      src="/portfolio image.png"
                       alt="Sainadh Macharla Profile Picture"
                       width={400}
                       height={400}

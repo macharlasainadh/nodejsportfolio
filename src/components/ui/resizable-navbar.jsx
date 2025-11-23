@@ -279,7 +279,7 @@ export const NavbarLogo = () => {
     >
       <div className="relative">
         <img
-          src="/portfolio image.jpg"
+          src="/portfolio image.png"
           alt="Sainadh Macharla"
           width={30}
           height={30}
