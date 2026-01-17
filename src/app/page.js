@@ -149,17 +149,17 @@ export default function Home() {
       ),
       alt: "CSS",
     },
-    {
-      node: (
-        <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-700/30">
-          <IconBrandTailwind className="text-teal-400" size={24} />
-          <span className="text-white font-medium sm:font-semibold text-sm sm:text-base">
-            Tailwind CSS
-          </span>
-        </div>
-      ),
-      alt: "Tailwind CSS",
-    },
+    // {
+    //   node: (
+    //     <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-700/30">
+    //       <IconBrandTailwind className="text-teal-400" size={24} />
+    //       <span className="text-white font-medium sm:font-semibold text-sm sm:text-base">
+    //         Tailwind CSS
+    //       </span>
+    //     </div>
+    //   ),
+    //   alt: "Tailwind CSS",
+    // },
     {
       node: (
         <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-700/30">
@@ -171,17 +171,17 @@ export default function Home() {
       ),
       alt: "Node.js",
     },
-    {
-      node: (
-        <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-700/30">
-          <IconCode className="text-gray-400" size={24} />
-          <span className="text-white font-medium sm:font-semibold text-sm sm:text-base">
-            Express.js
-          </span>
-        </div>
-      ),
-      alt: "Express.js",
-    },
+    // {
+    //   node: (
+    //     <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-700/30">
+    //       <IconCode className="text-gray-400" size={24} />
+    //       <span className="text-white font-medium sm:font-semibold text-sm sm:text-base">
+    //         Express.js
+    //       </span>
+    //     </div>
+    //   ),
+    //   alt: "Express.js",
+    // },
     {
       node: (
         <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-700/30">
@@ -193,17 +193,17 @@ export default function Home() {
       ),
       alt: "Postman",
     },
-    {
-      node: (
-        <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-700/30">
-          <IconBrandFirebase className="text-yellow-500" size={24} />
-          <span className="text-white font-medium sm:font-semibold text-sm sm:text-base">
-            Firebase
-          </span>
-        </div>
-      ),
-      alt: "Firebase",
-    },
+    // {
+    //   node: (
+    //     <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-700/30">
+    //       <IconBrandFirebase className="text-yellow-500" size={24} />
+    //       <span className="text-white font-medium sm:font-semibold text-sm sm:text-base">
+    //         Firebase
+    //       </span>
+    //     </div>
+    //   ),
+    //   alt: "Firebase",
+    // },
     {
       node: (
         <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-700/30">
@@ -215,17 +215,17 @@ export default function Home() {
       ),
       alt: "Python",
     },
-    {
-      node: (
-        <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-700/30">
-          <IconFlask className="text-gray-300" size={24} />
-          <span className="text-white font-medium sm:font-semibold text-sm sm:text-base">
-            Flask
-          </span>
-        </div>
-      ),
-      alt: "Flask",
-    },
+    // {
+    //   node: (
+    //     <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-700/30">
+    //       <IconFlask className="text-gray-300" size={24} />
+    //       <span className="text-white font-medium sm:font-semibold text-sm sm:text-base">
+    //         Flask
+    //       </span>
+    //     </div>
+    //   ),
+    //   alt: "Flask",
+    // },
     {
       node: (
         <div className="flex items-center gap-2 sm:gap-3 glass-effect px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-yellow-400/30 glow-box group hover:border-yellow-400/50 transition-all duration-300">
@@ -240,17 +240,17 @@ export default function Home() {
       ),
       alt: "JavaScript",
     },
-    {
-      node: (
-        <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-700/30">
-          <IconBrandTypescript className="text-blue-600" size={24} />
-          <span className="text-white font-medium sm:font-semibold text-sm sm:text-base">
-            TypeScript
-          </span>
-        </div>
-      ),
-      alt: "TypeScript",
-    },
+    // {
+    //   node: (
+    //     <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-700/30">
+    //       <IconBrandTypescript className="text-blue-600" size={24} />
+    //       <span className="text-white font-medium sm:font-semibold text-sm sm:text-base">
+    //         TypeScript
+    //       </span>
+    //     </div>
+    //   ),
+    //   alt: "TypeScript",
+    // },
     {
       node: (
         <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-3 rounded-full border border-gray-700/30">
@@ -276,47 +276,14 @@ export default function Home() {
   ];
 
   const projects = [
-    {
-      title: "Crypto Verse – Digital Assets Hub",
-      description:
-        "• Built a cryptocurrency tracking platform that consolidated live prices, market stats, and news into one dashboard, reducing information lookup time by 40%. • Integrated CoinRanking API & News API via RapidAPI, improving data accuracy and enabling real-time updates within 2s latency. • Optimized state management with Redux Toolkit, cutting redundant API calls by 30% and boosting app responsiveness.",
-      image: "/Screenshot 2025-10-01 232803.png", // Updated to use the actual uploaded image filename
-      tech: [
-        "Next.js",
-        "React",
-        "Tailwind CSS",
-        "Redux Toolkit",
-        "Chart.js",
-        "RapidAPI",
-      ],
-      github: "https://github.com/sayanadhi03/Crypto-Verse",
-      live: "https://crypto-verse-kappa.vercel.app/",
-    },
-    {
-      title: "AI Thief Detection System",
-      description:
-        "• Built a real-time object detection security system using TensorFlow.js (COCO-SSD) for browser-based AI inference. • Implemented person detection with bounding boxes and audio alerts, running entirely on the client-side for privacy. • Integrated React Webcam and Canvas API for live monitoring, achieving detection updates every 100ms.",
-      image: "/Screenshot 2025-10-02 094800.png", // Using the uploaded AI Thief Detection image
-      tech: ["Next.js", "TensorFlow.js", "React", "Tailwind CSS"],
-      github: "https://github.com/sayanadhi03/AI-Thief-Detector",
-      live: "https://ai-thief-detector-gamma.vercel.app/",
-    },
-    {
-      title: "Weather App 🌤️",
-      description:
-        "• Built a modern weather application providing real-time weather data, 5-day forecasts, and AQI information for cities worldwide. • Integrated Air Quality Index with health insights and multi-city weather tracking for comprehensive environmental monitoring. • Developed dark mode UI with smooth Framer Motion animations and temperature toggle (Celsius/Fahrenheit) for enhanced user experience.",
-      image: "/Screenshot 2025-10-14 220531.png", // Updated to use the new Weather App screenshot
-      tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
-      github: "https://github.com/sayanadhi03/weather-app",
-      live: "https://weather-app-eight-livid-25.vercel.app/",
-    },
+    
     {
       title: "Car Rental System",
       description:
         "• Developed a full-stack Car Rental System where users can browse cars, check availability, and make bookings with automated pricing and billing. • Implemented secure authentication, role-based access (Admin & Customer), and complete workflows for car management, booking approvals, and rental history tracking. • Built responsive dashboards and real-time availability updates, improving operational efficiency and reducing manual processes by 60%.",
-        image: "/Screenshot 2025-09-11 112027.png",
+        image: "/CarRentalXBasic.png",
         tech: ["Python", "Django", "SQLite / PostgreSQL", "HTML", "CSS", "JavaScript"],
-        github: "https://github.com/sayanadhi03/car-rental-system",   
+        github: "https://github.com/MSVVSSAINADH/car-rental-system",   
         live: "https://car-rental-system-demo.vercel.app",            
 
     },
@@ -324,11 +291,53 @@ export default function Home() {
       title: "Hospital Management System",
       description:
         "• Developed and containerized a Hospital Management System and implemented a complete CI/CD pipeline using GitHub Actions for automated build, test, and deployment processes. • Set up Docker-based environments and automated workflows for code quality checks, unit testing, and seamless deployment to staging and production servers. • Improved deployment reliability and reduced release time by 80% through automated pipeline triggers, versioning, and environment-specific configuration management.",
-      image: "/HMS.png", 
+      image: "/KLHospitalBasic.png", 
       tech: ["Python", "Django", "Docker", "GitHub Actions", "CI/CD", "PostgreSQL"],
-      github: "https://github.com/sayanadhi03/hospital-management-cicd",  
+      github: "https://github.com/MSVVSSAINADH/hospital-management-cicd",  
       live: "https://hospital-management-cicd-demo.vercel.app",           
     },
+    {
+      "title": "Truth Lens",
+      "description": "• Built an AI-powered news intelligence and incident detection platform using Next.js and FastAPI. • Implemented real-time rumor verification by scraping and analyzing 20+ global news sources with semantic search (Sentence Transformers). • Integrated Multimedia Forensics using CLIP for image analysis (Fire/Accident detection) and OpenAI Whisper for audio transcription and verification. • Features a live dashboard with real-time news aggregation, sentiment analysis, and instant incident alerts.",
+      "image": "/TruthLensBasic.png",
+      "tech": ["Next.js", "FastAPI", "Python", "Tailwind CSS", "Framer Motion"],
+      "github": "https://github.com/MSVVSSAINADH/truth-lens",
+      "live": "https://truth-lens-demo.vercel.app/"
+    },
+    // {
+    //   title: "Crypto Verse – Digital Assets Hub",
+    //   description:
+    //     "• Built a cryptocurrency tracking platform that consolidated live prices, market stats, and news into one dashboard, reducing information lookup time by 40%. • Integrated CoinRanking API & News API via RapidAPI, improving data accuracy and enabling real-time updates within 2s latency. • Optimized state management with Redux Toolkit, cutting redundant API calls by 30% and boosting app responsiveness.",
+    //   image: "/Screenshot 2025-10-01 232803.png", // Updated to use the actual uploaded image filename
+    //   tech: [
+    //     "Next.js",
+    //     "React",
+    //     "Tailwind CSS",
+    //     "Redux Toolkit",
+    //     "Chart.js",
+    //     "RapidAPI",
+    //   ],
+    //   github: "https://github.com/sayanadhi03/Crypto-Verse",
+    //   live: "https://crypto-verse-kappa.vercel.app/",
+    // },
+    // {
+    //   title: "AI Thief Detection System",
+    //   description:
+    //     "• Built a real-time object detection security system using TensorFlow.js (COCO-SSD) for browser-based AI inference. • Implemented person detection with bounding boxes and audio alerts, running entirely on the client-side for privacy. • Integrated React Webcam and Canvas API for live monitoring, achieving detection updates every 100ms.",
+    //   image: "/Screenshot 2025-10-02 094800.png", // Using the uploaded AI Thief Detection image
+    //   tech: ["Next.js", "TensorFlow.js", "React", "Tailwind CSS"],
+    //   github: "https://github.com/sayanadhi03/AI-Thief-Detector",
+    //   live: "https://ai-thief-detector-gamma.vercel.app/",
+    // },
+    // {
+    //   title: "Weather App 🌤️",
+    //   description:
+    //     "• Built a modern weather application providing real-time weather data, 5-day forecasts, and AQI information for cities worldwide. • Integrated Air Quality Index with health insights and multi-city weather tracking for comprehensive environmental monitoring. • Developed dark mode UI with smooth Framer Motion animations and temperature toggle (Celsius/Fahrenheit) for enhanced user experience.",
+    //   image: "/Screenshot 2025-10-14 220531.png", // Updated to use the new Weather App screenshot
+    //   tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+    //   github: "https://github.com/sayanadhi03/weather-app",
+    //   live: "https://weather-app-eight-livid-25.vercel.app/",
+    // },
   ];
 
   const education = [
@@ -337,7 +346,7 @@ export default function Home() {
       institution: "K L University",
       location: "Green Fields, Vaddeswaram",
       period: "2024 - 2027",
-      grade: "8.94 CGPA",
+      grade: "8.95 CGPA",
       icon: IconSchool,
       achievements: [
         "Maintaining excellent academic performance.",
@@ -413,28 +422,26 @@ export default function Home() {
                 className="space-y-4 sm:space-y-6"
               >
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white">
-                  Passionate Full-Stack Developer
+                    Aspiring Software Engineer & Cybersecurity Learner
                 </h3>
+
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  Final-year Computer Science student skilled in full-stack web
-                  development (
-                  <strong className="text-white font-bold">React</strong>,{" "}
-                  <strong className="text-white font-bold">Node.js</strong>,{" "}
-                  <strong className="text-white font-bold">MongoDB</strong>)
-                  with project experience in AI-based applications. Passionate
-                  about problem-solving, clean code, and currently exploring{" "}
-                  <strong className="text-white font-bold">Agentic AI</strong>{" "}
-                  for building intelligent, autonomous systems.
+                  Pre-final year <strong className="text-white font-bold">B.Tech CSE</strong> student
+                  with hands-on project experience in {" "}
+                  <strong className="text-white font-bold">full-stack web development</strong>{" "}
+                  using React, Node.js, and MongoDB.  I enjoy building functional
+                  projects and improving my problem-solving skills through continuous practice.
                 </p>
+
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  My expertise spans across frontend frameworks like{" "}
-                  <strong className="text-white font-bold">React</strong> and
-                  <strong className="text-white font-bold">Next.js</strong>,
-                  backend technologies including{" "}
-                  <strong className="text-white font-bold">Node.js</strong>, and
-                  database management with{" "}
-                  <strong className="text-white font-bold">MongoDB</strong>.
+                  Currently learning{" "}
+                  <strong className="text-white font-bold">Cybersecurity</strong>,{" "}
+                  <strong className="text-white font-bold">AI & Data Science</strong>, and
+                  modern backend technologies. Actively seeking{" "}
+                  <strong className="text-white font-bold">internship opportunities</strong>{" "}
+                  to learn from real-world environments and apply my academic knowledge.
                 </p>
+
                 <div className="flex flex-wrap gap-4 pt-4">
                   <div className="flex items-center gap-2 text-blue-400">
                     <IconMapPin size={20} />
@@ -442,11 +449,14 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-2 text-blue-400">
                     <IconMail size={20} />
-                    <span>Available for hire</span>
+                    <span>Open to internships</span>
                   </div>
                 </div>
               </motion.div>
 
+
+
+              {/* RIGHT STATS */}
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -455,9 +465,9 @@ export default function Home() {
                 className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
               >
                 {[
-                  { number: "10+", label: "Projects Completed" },
-                  { number: "3+", label: "Years Experience" },
-                  { number: "20+", label: "Happy Clients" },
+                  { number: "3+", label: "Academic & Personal Projects" },
+                  { number: "5+", label: "Technologies Learned" },
+                  { number: "100%", label: "Learning Mindset" },
                 ].map((stat, index) => (
                   <motion.div
                     key={index}
