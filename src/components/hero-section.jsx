@@ -7,9 +7,10 @@ import { motion } from "framer-motion";
 export function HeroSection() {
   const titles = [
     "FULL STACK DEVELOPER",
-    "FRONTEND ENGINEER",
-    "AGENTIC AI ENGINEER",
+    "CYBERSECURITY ENTHUSIAST",
+    "AI & DATA SCIENCE LEARNER",
   ];
+
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -107,7 +108,7 @@ export function HeroSection() {
                     {char === " " ? "\u00A0" : char}
                   </motion.span>
                 ))}
-                {"Sai".split("").map((char, index) => (
+                {"Sainadh".split("").map((char, index) => (
                   <motion.span
                     key={index + 10}
                     initial={{ opacity: 0, y: 50, scale: 0.8 }}

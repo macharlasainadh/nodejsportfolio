@@ -276,16 +276,24 @@ export default function Home() {
   ];
 
   const projects = [
-    
     {
-      title: "Car Rental System",
+      title: "Personal Portfolio Website",
       description:
-        "• Developed a full-stack Car Rental System where users can browse cars, check availability, and make bookings with automated pricing and billing. • Implemented secure authentication, role-based access (Admin & Customer), and complete workflows for car management, booking approvals, and rental history tracking. • Built responsive dashboards and real-time availability updates, improving operational efficiency and reducing manual processes by 60%.",
-        image: "/CarRentalXBasic.png",
-        tech: ["Python", "Django", "SQLite / PostgreSQL", "HTML", "CSS", "JavaScript"],
-        github: "https://github.com/MSVVSSAINADH/car-rental-system",   
-        live: "https://car-rental-system-demo.vercel.app",            
-
+        "• Designed and developed a modern, animated personal portfolio using Next.js and Tailwind CSS. " +
+        "• Implemented scroll-based animations, interactive timelines, and responsive layouts. " +
+        "• Deployed on Vercel with performance optimization and clean UI/UX design.",
+      image: "/PersonalPortfolioBasic.png",
+      tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+      github: "https://github.com/MSVVSSAINADH/portfolio",
+      live: "https://msainadh.vercel.app/"
+    },
+    {
+      title: "Truth Lens",
+      description: "• Built an AI-powered news intelligence and incident detection platform using Next.js and FastAPI. • Implemented real-time rumor verification by scraping and analyzing 20+ global news sources with semantic search (Sentence Transformers). • Integrated Multimedia Forensics using CLIP for image analysis (Fire/Accident detection) and OpenAI Whisper for audio transcription and verification. • Features a live dashboard with real-time news aggregation, sentiment analysis, and instant incident alerts.",
+      image: "/TruthLensBasic.png",
+      tech: ["Next.js", "FastAPI", "Python", "Tailwind CSS", "Framer Motion"],
+      github: "https://github.com/MSVVSSAINADH/truth-lens",
+      live: "https://truth-lens-demo.vercel.app/"
     },
     {
       title: "Hospital Management System",
@@ -297,12 +305,14 @@ export default function Home() {
       live: "https://hospital-management-cicd-demo.vercel.app",           
     },
     {
-      "title": "Truth Lens",
-      "description": "• Built an AI-powered news intelligence and incident detection platform using Next.js and FastAPI. • Implemented real-time rumor verification by scraping and analyzing 20+ global news sources with semantic search (Sentence Transformers). • Integrated Multimedia Forensics using CLIP for image analysis (Fire/Accident detection) and OpenAI Whisper for audio transcription and verification. • Features a live dashboard with real-time news aggregation, sentiment analysis, and instant incident alerts.",
-      "image": "/TruthLensBasic.png",
-      "tech": ["Next.js", "FastAPI", "Python", "Tailwind CSS", "Framer Motion"],
-      "github": "https://github.com/MSVVSSAINADH/truth-lens",
-      "live": "https://truth-lens-demo.vercel.app/"
+      title: "Car Rental System",
+      description:
+        "• Developed a full-stack Car Rental System where users can browse cars, check availability, and make bookings with automated pricing and billing. • Implemented secure authentication, role-based access (Admin & Customer), and complete workflows for car management, booking approvals, and rental history tracking. • Built responsive dashboards and real-time availability updates, improving operational efficiency and reducing manual processes by 60%.",
+        image: "/CarRentalXBasic.png",
+        tech: ["Python", "Django", "SQLite / PostgreSQL", "HTML", "CSS", "JavaScript"],
+        github: "https://github.com/MSVVSSAINADH/car-rental-system",   
+        live: "https://car-rental-system-demo.vercel.app",            
+
     },
     // {
     //   title: "Crypto Verse – Digital Assets Hub",
@@ -350,19 +360,31 @@ export default function Home() {
       icon: IconSchool,
       achievements: [
         "Maintaining excellent academic performance.",
-        "Working on various software development projects.",
+        "Actively working on academic and personal software projects.",
       ],
     },
     {
       degree: "Diploma in Computer Science",
       institution: "Chirala Engineering College",
       location: "Ramapuram",
-      period: "2021 - 2023",
+      period: "2021 - 2024",
       grade: "89%",
       icon: IconCertificate,
       achievements: [
-        "Specialized in Computer Science and Mathematics.",
+        "Strong foundation in Computer Science and Mathematics.",
         "Achieved outstanding results in Computer Science in board examinations.",
+      ],
+    },
+    {
+      degree: "Secondary School Certificate (Class X)",
+      institution: "ViswaSanthi E M High School",
+      location: "Bhattiprolu",
+      period: "2020 - 2021",
+      grade: "10 CGPA",
+      icon: IconSchool,
+      achievements: [
+        "Completed SSC with a strong academic record.",
+        "Developed a solid foundation in mathematics and science subjects.",
       ],
     },
   ];
@@ -523,119 +545,113 @@ export default function Home() {
               <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto rounded-full mt-6" />
             </motion.div>
 
-            <div className="space-y-8">
-              {education.map((edu, index) => (
+            {/* TIMELINE WRAPPER */}
+            <div className="relative">
+              
+              {/* THE CENTRAL SPINE: Starts at first dot, ends at last dot */}
+              <div 
+                className="hidden lg:block absolute left-1/2 -translate-x-1/2 w-[2px] bg-gray-800"
+                style={{ 
+                  top: "10%",    /* Constrained to start at the first point center */
+                  bottom: "10%"  /* Constrained to stop at the last point center */
+                }}
+              >
                 <motion.div
-                  key={edu.degree}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  className="w-full bg-gradient-to-b from-blue-500 to-blue-400 shadow-[0_0_10px_rgba(59,130,246,0.5)]"
+                  initial={{ height: 0 }}
+                  whileInView={{ height: "100%" }}
+                  transition={{ duration: 3.5, ease: "easeInOut" }}
                   viewport={{ once: true }}
-                  className={`flex flex-col lg:flex-row gap-6 lg:gap-8 items-center ${
-                    index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                  }`}
-                >
-                  {/* Education Card */}
-                  <div className="flex-1">
-                    <motion.div
-                      className="bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-700/30 hover:border-blue-500/30 transition-all duration-300 group"
-                      whileHover={{ y: -10, scale: 1.02 }}
-                    >
-                      <div className="flex items-start gap-4 sm:gap-6">
-                        <div className="p-3 sm:p-4 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-xl">
-                          <edu.icon
-                            size={28}
-                            className="text-blue-400 sm:w-8 sm:h-8"
-                          />
-                        </div>
+                />
+              </div>
 
-                        <div className="flex-1">
-                          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
-                            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                              {edu.degree}
-                            </h3>
-                            <div className="flex items-center gap-2 text-blue-400 mt-2 lg:mt-0">
-                              <IconCalendar size={18} />
-                              <span className="font-medium">{edu.period}</span>
-                            </div>
-                          </div>
-
-                          <div className="space-y-3 mb-6">
-                            <div className="flex flex-col lg:flex-row lg:items-center gap-2">
-                              <h4 className="text-base sm:text-lg font-semibold text-gray-200">
-                                {edu.institution}
-                              </h4>
-                              <span className="text-sm sm:text-base text-gray-400">
-                                • {edu.location}
-                              </span>
-                            </div>
-                            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500/20 to-indigo-600/20 px-4 py-2 rounded-full border border-blue-500/30">
-                              <IconTrophy
-                                size={16}
-                                className="text-green-400"
-                              />
-                              <span className="text-green-300 font-medium">
-                                {edu.grade}
-                              </span>
-                            </div>
-                          </div>
-
-                          <div>
-                            <h5 className="text-gray-300 font-medium mb-3">
-                              Key Achievements:
-                            </h5>
-                            <ul className="space-y-2">
-                              {edu.achievements.map((achievement, i) => (
-                                <motion.li
-                                  key={i}
-                                  className="flex items-center gap-3 text-gray-300"
-                                  initial={{ opacity: 0, x: -20 }}
-                                  whileInView={{ opacity: 1, x: 0 }}
-                                  transition={{
-                                    duration: 0.5,
-                                    delay: index * 0.2 + i * 0.1,
-                                  }}
-                                  viewport={{ once: true }}
-                                >
-                                  <div className="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0" />
-                                  <span>{achievement}</span>
-                                </motion.li>
-                              ))}
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </motion.div>
-                  </div>
-
-                  {/* Timeline Connector */}
-                  <div className="hidden lg:flex flex-col items-center">
-                    <motion.div
-                      className="w-4 h-4 border-4 border-blue-500 bg-black rounded-full"
-                      initial={{ scale: 0 }}
-                      whileInView={{ scale: 1 }}
-                      transition={{ duration: 0.5, delay: index * 0.2 }}
-                      viewport={{ once: true }}
-                    />
-                    {index < education.length - 1 && (
+              <div className="space-y-24">
+                {education.map((edu, index) => (
+                  <motion.div
+                    key={edu.degree}
+                    className={`relative flex flex-col lg:flex-row items-center gap-8 lg:gap-0 z-10 ${
+                      index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                    }`}
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                  >
+                    {/* Education Card */}
+                    <div className="w-full lg:w-[45%]">
                       <motion.div
-                        className="w-1 h-32 bg-gradient-to-b from-blue-500 to-transparent"
-                        initial={{ height: 0 }}
-                        whileInView={{ height: 128 }}
-                        transition={{ duration: 0.8, delay: index * 0.2 + 0.3 }}
+                        className="bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-700/30 hover:border-blue-500/30 transition-all duration-300 group"
+                        whileHover={{ y: -10, scale: 1.02 }}
+                      >
+                        <div className="flex items-start gap-4 sm:gap-6">
+                          <div className="p-3 sm:p-4 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-xl">
+                            <edu.icon size={28} className="text-blue-400 sm:w-8 sm:h-8" />
+                          </div>
+
+                          <div className="flex-1">
+                            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
+                              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                                {edu.degree}
+                              </h3>
+                              <div className="flex items-center gap-2 text-blue-400 mt-2 lg:mt-0">
+                                <IconCalendar size={18} />
+                                <span className="font-medium">{edu.period}</span>
+                              </div>
+                            </div>
+
+                            <div className="space-y-3 mb-6 text-left">
+                              <div className="flex flex-col lg:flex-row lg:items-center gap-2">
+                                <h4 className="text-base sm:text-lg font-semibold text-gray-200">
+                                  {edu.institution}
+                                </h4>
+                                <span className="text-sm sm:text-base text-gray-400">
+                                  • {edu.location}
+                                </span>
+                              </div>
+
+                              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500/20 to-indigo-600/20 px-4 py-2 rounded-full border border-blue-500/30">
+                                <IconTrophy size={16} className="text-green-400" />
+                                <span className="text-green-300 font-medium">
+                                  {edu.grade}
+                                </span>
+                              </div>
+                            </div>
+
+                            <div className="text-left">
+                              <h5 className="text-gray-300 font-medium mb-3">Key Achievements:</h5>
+                              <ul className="space-y-2">
+                                {edu.achievements.map((achievement, i) => (
+                                  <li key={i} className="flex items-start gap-3 text-gray-300">
+                                    <div className="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0 mt-1.5" />
+                                    <span className="text-sm sm:text-base">{achievement}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    </div>
+
+                    {/* CENTRAL DOT INDICATOR */}
+                    <div className="hidden lg:flex w-[10%] justify-center items-center">
+                      <motion.div
+                        className="w-5 h-5 rounded-full bg-black border-4 border-blue-500 shadow-[0_0_15px_rgba(59,130,246,1)] z-20"
+                        initial={{ scale: 0 }}
+                        whileInView={{ scale: 1 }}
+                        transition={{ type: "spring", stiffness: 300, delay: 0.3 }}
                         viewport={{ once: true }}
                       />
-                    )}
-                  </div>
+                    </div>
 
-                  {/* Spacer for alternating layout */}
-                  <div className="flex-1 hidden lg:block" />
-                </motion.div>
-              ))}
+                    {/* Spacer for alternating layout */}
+                    <div className="hidden lg:block w-[45%]" />
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
-
         {/* Skills Section */}
         <section id="skills" className="py-20 px-4 relative overflow-hidden">
           {/* Background */}
@@ -868,7 +884,7 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="font-medium">Phone</p>
-                        <p className="text-blue-400">+91 xxxxx xxxxx</p>
+                        <p className="text-blue-400">+91 79810 81512</p>
                       </div>
                     </div>
 
