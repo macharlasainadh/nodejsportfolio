@@ -293,7 +293,15 @@ export default function Home() {
       image: "/TruthLensBasic.png",
       tech: ["Next.js", "FastAPI", "Python", "Tailwind CSS", "Framer Motion"],
       github: "https://github.com/MSVVSSAINADH/truth-lens",
-      live: "https://truth-lens-demo.vercel.app/"
+      live: "https://ms-project-announcement.vercel.app/"
+    },
+    {
+      title: "CYBER X",
+      description: "• Built an AI-driven, gamified cybersecurity simulator for Red-Team awareness training using React and FastAPI. • Implemented an adaptive password attack engine with pattern analysis and hybrid crack-time estimation to demonstrate real-world password vulnerabilities. • Developed a phishing susceptibility and social engineering simulation module powered by NLP-based chat interactions. • Integrated secure JWT authentication, monitoring hooks, and a live dashboard to provide safe, interactive cyber-attack simulations for educational purposes.",
+      image: "/OffensiveAI.png",
+      tech: ["React", "FastAPI", "Python", "MySQL", "JWT", "Tailwind CSS"],
+      github: "https://github.com/MSVVSSAINADH/Skill-Palaver-Offensive-AI",
+      live: "https://ms-project-announcement.vercel.app/"
     },
     {
       title: "Hospital Management System",
@@ -301,8 +309,8 @@ export default function Home() {
         "• Developed and containerized a Hospital Management System and implemented a complete CI/CD pipeline using GitHub Actions for automated build, test, and deployment processes. • Set up Docker-based environments and automated workflows for code quality checks, unit testing, and seamless deployment to staging and production servers. • Improved deployment reliability and reduced release time by 80% through automated pipeline triggers, versioning, and environment-specific configuration management.",
       image: "/KLHospitalBasic.png", 
       tech: ["Python", "Django", "Docker", "GitHub Actions", "CI/CD", "PostgreSQL"],
-      github: "https://github.com/MSVVSSAINADH/hospital-management-cicd",  
-      live: "https://hospital-management-cicd-demo.vercel.app",           
+      github: "https://github.com/MSVVSSAINADH/hospital-management-system",  
+      live: "https://ms-project-announcement.vercel.app/",           
     },
     {
       title: "Car Rental System",
@@ -311,7 +319,7 @@ export default function Home() {
         image: "/CarRentalXBasic.png",
         tech: ["Python", "Django", "SQLite / PostgreSQL", "HTML", "CSS", "JavaScript"],
         github: "https://github.com/MSVVSSAINADH/car-rental-system",   
-        live: "https://car-rental-system-demo.vercel.app",            
+        live: "https://ms-project-announcement.vercel.app/",            
 
     },
     // {
