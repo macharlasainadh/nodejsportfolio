@@ -25,7 +25,7 @@ export function Highlighter({
   // If isView is false, always show. If isView is true, wait for inView
   const shouldShow = !isView || isInView;
 
-  useEffect(() => {
+    useEffect(() => {
     if (!shouldShow) return;
 
     const element = elementRef.current;
@@ -42,20 +42,67 @@ export function Highlighter({
     };
 
     const annotation = annotate(element, annotationConfig);
-
     annotationRef.current = annotation;
-    annotationRef.current.show();
+    annotation.show();
+
+    // Track the last position relative to the document
+    let lastTop = 0;
+    let lastLeft = 0;
+    let lastWidth = 0;
+    let lastHeight = 0;
+
+    const updatePosition = () => {
+      if (!element) return;
+      const rect = element.getBoundingClientRect();
+      const absoluteTop = rect.top + window.scrollY;
+      const absoluteLeft = rect.left + window.scrollX;
+
+      // Only hide/show if layout coordinates or size have actually changed
+      if (
+        absoluteTop !== lastTop ||
+        absoluteLeft !== lastLeft ||
+        rect.width !== lastWidth ||
+        rect.height !== lastHeight
+      ) {
+        lastTop = absoluteTop;
+        lastLeft = absoluteLeft;
+        lastWidth = rect.width;
+        lastHeight = rect.height;
+        annotation.hide();
+        annotation.show();
+      }
+    };
+
+    updatePosition();
 
     const resizeObserver = new ResizeObserver(() => {
-      annotation.hide();
-      annotation.show();
+      updatePosition();
     });
 
     resizeObserver.observe(element);
     resizeObserver.observe(document.body);
 
+    // Fast polling on mount/animation entry (first 2 seconds)
+    const fastIntervalId = setInterval(updatePosition, 100);
+
+    // Slow polling for dynamic updates/collapses/expands later
+    let slowIntervalId;
+    const timeoutId = setTimeout(() => {
+      clearInterval(fastIntervalId);
+      slowIntervalId = setInterval(updatePosition, 500);
+    }, 2000);
+
+    // Recalculate position when fonts are loaded
+    if (document.fonts) {
+      document.fonts.ready.then(updatePosition);
+    }
+
     return () => {
+      clearInterval(fastIntervalId);
+      clearInterval(slowIntervalId);
+      clearTimeout(timeoutId);
       if (element) {
+        annotation.remove();
         annotate(element, { type: action }).remove();
         resizeObserver.disconnect();
       }
@@ -70,7 +117,7 @@ export function Highlighter({
     padding,
     multiline,
   ]);
-
+  
   return (
     <span ref={elementRef} className="relative inline-block bg-transparent">
       {children}

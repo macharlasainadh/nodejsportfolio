@@ -25,6 +25,7 @@ import {
   IconMail,
   IconBrandLinkedin,
   IconBrandGithub,
+  IconBriefcase,
   IconExternalLink,
   IconDownload,
   IconMapPin,
@@ -277,37 +278,18 @@ export default function Home() {
 
   const projects = [
     {
-      title: "Personal Portfolio Website",
-      description:
-        "• Designed and developed a modern, animated personal portfolio using Next.js and Tailwind CSS. " +
-        "• Implemented scroll-based animations, interactive timelines, and responsive layouts. " +
-        "• Deployed on Vercel with performance optimization and clean UI/UX design.",
-      image: "/PersonalPortfolioBasic.png",
-      tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
-      github: "https://github.com/MSVVSSAINADH/portfolio",
-      live: "https://msainadh.vercel.app/"
-    },
-    {
-      title: "Truth Lens",
-      description: "• Built an AI-powered news intelligence and incident detection platform using Next.js and FastAPI. • Implemented real-time rumor verification by scraping and analyzing 20+ global news sources with semantic search (Sentence Transformers). • Integrated Multimedia Forensics using CLIP for image analysis (Fire/Accident detection) and OpenAI Whisper for audio transcription and verification. • Features a live dashboard with real-time news aggregation, sentiment analysis, and instant incident alerts.",
-      image: "/TruthLensBasic.png",
-      tech: ["Next.js", "FastAPI", "Python", "Tailwind CSS", "Framer Motion"],
-      github: "https://github.com/MSVVSSAINADH/truth-lens",
-      live: "https://ms-project-announcement.vercel.app/"
-    },
-    {
-      title: "CYBER X",
+      title: "RedSentinel AI",
       description: "• Built an AI-driven, gamified cybersecurity simulator for Red-Team awareness training using React and FastAPI. • Implemented an adaptive password attack engine with pattern analysis and hybrid crack-time estimation to demonstrate real-world password vulnerabilities. • Developed a phishing susceptibility and social engineering simulation module powered by NLP-based chat interactions. • Integrated secure JWT authentication, monitoring hooks, and a live dashboard to provide safe, interactive cyber-attack simulations for educational purposes.",
-      image: "/OffensiveAI.png",
+      image: "/RedSentinelAI.png",
       tech: ["React", "FastAPI", "Python", "MySQL", "JWT", "Tailwind CSS"],
-      github: "https://github.com/MSVVSSAINADH/Skill-Palaver-Offensive-AI",
+      github: "https://github.com/MSVVSSAINADH/redsentinel-ai",
       live: "https://ms-project-announcement.vercel.app/"
     },
     {
       title: "Hospital Management System",
       description:
         "• Developed and containerized a Hospital Management System and implemented a complete CI/CD pipeline using GitHub Actions for automated build, test, and deployment processes. • Set up Docker-based environments and automated workflows for code quality checks, unit testing, and seamless deployment to staging and production servers. • Improved deployment reliability and reduced release time by 80% through automated pipeline triggers, versioning, and environment-specific configuration management.",
-      image: "/KLHospitalBasic.png", 
+      image: "/HMSnew.png", 
       tech: ["Python", "Django", "Docker", "GitHub Actions", "CI/CD", "PostgreSQL"],
       github: "https://github.com/MSVVSSAINADH/hospital-management-system",  
       live: "https://ms-project-announcement.vercel.app/",           
@@ -322,6 +304,27 @@ export default function Home() {
         live: "https://ms-project-announcement.vercel.app/",            
 
     },
+    {
+      title: "Developer Portfolio",
+      description:
+        "• Designed and developed a modern personal portfolio using Next.js, React, and Tailwind CSS. " +
+        "• Implemented smooth animations, interactive UI components, and fully responsive layouts for an enhanced user experience. " +
+        "• Optimized performance and deployed the application on Vercel with clean UI/UX design principles.",
+      image: "/PersonalPortfolioBasic.png",
+      tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+      github: "https://github.com/MSVVSSAINADH/portfolio",
+      live: "https://msainadh.vercel.app/"
+    },
+    {
+      title: "Truth Lens",
+      description: "• Built an AI-powered news intelligence and incident detection platform using Next.js and FastAPI. • Implemented real-time rumor verification by scraping and analyzing 20+ global news sources with semantic search (Sentence Transformers). • Integrated Multimedia Forensics using CLIP for image analysis (Fire/Accident detection) and OpenAI Whisper for audio transcription and verification. • Features a live dashboard with real-time news aggregation, sentiment analysis, and instant incident alerts.",
+      image: "/TruthLensBasic.png",
+      tech: ["Next.js", "FastAPI", "Python", "Tailwind CSS", "Framer Motion"],
+      github: "https://github.com/MSVVSSAINADH/truth-lens",
+      live: "https://ms-project-announcement.vercel.app/"
+    },
+    
+    
     // {
     //   title: "Crypto Verse – Digital Assets Hub",
     //   description:
@@ -452,36 +455,37 @@ export default function Home() {
                 className="space-y-4 sm:space-y-6"
               >
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white">
-                    Aspiring Software Engineer & Cybersecurity Learner
+                  Aspiring Software Engineer & Cybersecurity Enthusiast
                 </h3>
 
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  Pre-final year <strong className="text-white font-bold">B.Tech CSE</strong> student
-                  with hands-on project experience in {" "}
-                  <strong className="text-white font-bold">full-stack web development</strong>{" "}
-                  using React, Node.js, and MongoDB.  I enjoy building functional
-                  projects and improving my problem-solving skills through continuous practice.
+                  Final year <strong className="text-white">B.Tech CSE</strong> student
+                  with hands-on experience building{" "}
+                  <strong className="text-white">full-stack web applications</strong>{" "}
+                  using React, Node.js, and MongoDB. Passionate about developing
+                  scalable applications and improving problem-solving skills through
+                  real-world projects.
                 </p>
 
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  Currently learning{" "}
-                  <strong className="text-white font-bold">Cybersecurity</strong>,{" "}
-                  <strong className="text-white font-bold">AI & Data Science</strong>, and
-                  modern backend technologies. Actively seeking{" "}
-                  <strong className="text-white font-bold">internship opportunities</strong>{" "}
-                  to learn from real-world environments and apply my academic knowledge.
+                  Currently exploring{" "}
+                  <strong className="text-white">Cybersecurity</strong>,{" "}
+                  <strong className="text-white">AI & Data Science</strong>, and
+                  backend engineering while actively seeking internship and
+                  software engineering opportunities.
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-4">
-                  <div className="flex items-center gap-2 text-blue-400">
-                    <IconMapPin size={20} />
-                    <span>Andhra Pradesh, India</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-blue-400">
-                    <IconMail size={20} />
-                    <span>Open to internships</span>
-                  </div>
+                <div className="flex items-center gap-2 text-blue-400">
+                  <IconMapPin size={20} />
+                  <span>Andhra Pradesh, India</span>
                 </div>
+
+                <div className="flex items-center gap-2 text-blue-400">
+                  <IconBriefcase size={20} />
+                  <span>Open to Internships</span>
+                </div>
+              </div>
               </motion.div>
 
 
@@ -492,12 +496,13 @@ export default function Home() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6"
               >
                 {[
-                  { number: "3+", label: "Academic & Personal Projects" },
-                  { number: "5+", label: "Technologies Learned" },
-                  { number: "100%", label: "Learning Mindset" },
+                  { number: "8.95", label: "CGPA at KL University" },
+                  { number: "5+", label: "Projects Built" },
+                  { number: "10+", label: "Technologies Learned" },
+                  { number: "Open", label: "To Internships" },
                 ].map((stat, index) => (
                   <motion.div
                     key={index}
@@ -826,6 +831,102 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Certifications Section */}
+          <section
+  id="certifications"
+  className="scroll-mt-32 py-20 relative"
+>
+          <div className="container mx-auto px-6">
+            {/* Section Header */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                My{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-600">
+                  Certifications
+                </span>
+              </h2>
+              <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-4">
+                Verified credentials and achievements from{" "}
+                <Highlighter action="underline" color="#FF9800">
+                  industry recognized
+                </Highlighter>{" "}
+                platforms and{" "}
+                <Highlighter action="highlight" color="#87CEFA">
+                  global organizations
+                </Highlighter>
+              </p>
+            </motion.div>
+
+            {/* Certification Card */}
+            <div className="flex justify-center">
+              <motion.a
+                href="https://learn.microsoft.com/api/credentials/share/en-us/SRIVEERAVENKATASIVASAINADHMACHARLA-1872/818791B9077308CC?sharingId=5DAF2A784BFD4199"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative bg-gradient-to-br from-gray-900 to-gray-800 border border-blue-500/20 rounded-2xl p-6 max-w-md w-full hover:border-blue-500/50 transition-all duration-300"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -5, boxShadow: "0 20px 40px rgba(0, 123, 255, 0.2)" }}
+              >
+                {/* Top Row */}
+                <div className="flex items-center gap-4 mb-4">
+                  {/* Microsoft Logo */}
+                  <div className="p-3 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-xl border border-blue-500/20">
+                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                      <rect x="1" y="1" width="10" height="10" fill="#F25022" />
+                      <rect x="13" y="1" width="10" height="10" fill="#7FBA00" />
+                      <rect x="1" y="13" width="10" height="10" fill="#00A4EF" />
+                      <rect x="13" y="13" width="10" height="10" fill="#FFB900" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-xs text-blue-400 font-medium uppercase tracking-wider">
+                      Microsoft
+                    </p>
+                    <h3 className="text-white font-bold text-lg leading-tight">
+                      Azure Fundamentals
+                    </h3>
+                    <p className="text-gray-500 text-xs">AZ-900</p>
+                  </div>
+                </div>
+
+                {/* Divider */}
+                <div className="h-px bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-transparent mb-4" />
+
+                {/* Details */}
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2 text-gray-400 text-sm">
+                    <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span>Feb 5, 2026</span>
+                  </div>
+                  <div className="flex items-center gap-1 text-green-400 text-sm font-medium">
+                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                    Verified
+                  </div>
+                </div>
+
+                {/* View Credential */}
+                <div className="mt-4 flex items-center gap-2 text-blue-400 text-sm font-medium group-hover:text-blue-300 transition-colors">
+                  <span>View Credential</span>
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </div>
+              </motion.a>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section id="contact" className="py-20 px-4 relative">
           <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black" />
@@ -844,6 +945,7 @@ export default function Home() {
                   Connect
                 </span>
               </h2>
+
               <p className="text-gray-300 text-lg max-w-2xl mx-auto">
                 Ready to bring your{" "}
                 <Highlighter action="underline" color="#FF9800">
@@ -857,6 +959,7 @@ export default function Home() {
             </motion.div>
 
             <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+              {/* Left Section */}
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -868,98 +971,116 @@ export default function Home() {
                   <h3 className="text-xl sm:text-2xl font-semibold text-white mb-6">
                     Get in Touch
                   </h3>
+
                   <div className="space-y-4">
-                    <div className="flex items-center gap-3 sm:gap-4 text-gray-300">
-                      <div className="p-2 sm:p-3 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-lg">
-                        <IconMail
-                          size={18}
-                          className="text-blue-400 sm:w-5 sm:h-5"
-                        />
-                      </div>
-                      <div>
-                        <p className="font-medium text-sm sm:text-base">
-                          Email
-                        </p>
-                        <p className="text-blue-400 text-sm sm:text-base break-all">
-                          macharlasainadh2506@gmail.com
-                        </p>
-                      </div>
-                    </div>
+          {/* LinkedIn */}
+          <div className="flex items-center gap-4 text-gray-300">
+            <div className="p-3 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-lg">
+              <IconBrandLinkedin
+                size={20}
+                className="text-blue-400"
+              />
+            </div>
 
-                    <div className="flex items-center gap-4 text-gray-300">
-                      <div className="p-3 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-lg">
-                        <IconPhone size={20} className="text-blue-400" />
-                      </div>
-                      <div>
-                        <p className="font-medium">Phone</p>
-                        <p className="text-blue-400">+91 79810 81512</p>
-                      </div>
-                    </div>
+            <div>
+              <p className="font-medium text-sm sm:text-base">
+                LinkedIn
+              </p>
 
-                    <div className="flex items-center gap-4 text-gray-300">
-                      <div className="p-3 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-lg">
-                        <IconMapPin size={20} className="text-blue-400" />
-                      </div>
-                      <div>
-                        <p className="font-medium">Location</p>
-                        <p className="text-blue-400">
-                          Mangalagiri, Andhra Pradesh, India
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <motion.a
-                    href="https://www.linkedin.com/in/msvvssainadh/"
-                    target="_blank"
-                    className="p-3 bg-gradient-to-br from-gray-700/50 to-gray-800/50 rounded-lg border border-gray-600/30 hover:border-blue-500/50 transition-all duration-300"
-                    whileHover={{ scale: 1.1, y: -2 }}
-                  >
-                    <IconBrandLinkedin size={24} className="text-blue-400" />
-                  </motion.a>
-                  <motion.a
-                    href="https://github.com/MSVVSSAINADH"
-                    target="_blank"
-                    className="p-3 bg-gradient-to-br from-gray-700/50 to-gray-800/50 rounded-lg border border-gray-600/30 hover:border-blue-500/50 transition-all duration-300"
-                    whileHover={{ scale: 1.1, y: -2 }}
-                  >
-                    <IconBrandGithub size={24} className="text-blue-400" />
-                  </motion.a>
-                  <motion.a
-                    href="sairesume.pdf"
-                    target="_blank"
-                    className="p-3 bg-gradient-to-br from-gray-700/50 to-gray-800/50 rounded-lg border border-gray-600/30 hover:border-blue-500/50 transition-all duration-300"
-                    whileHover={{ scale: 1.1, y: -2 }}
-                  >
-                    <IconDownload size={24} className="text-blue-400" />
-                  </motion.a>
-                </div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-sm rounded-xl p-8 border border-gray-700/30"
+              <a
+                href="https://www.linkedin.com/in/msvvssainadh/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 text-sm sm:text-base hover:text-blue-300 transition-colors"
               >
-                <ContactForm />
-              </motion.div>
+                linkedin.com/in/msvvssainadh
+              </a>
             </div>
           </div>
-        </section>
 
-        {/* Footer */}
-        <footer className="py-8 px-4 border-t border-gray-800">
-          <div className="container mx-auto max-w-6xl text-center">
-            <p className="text-gray-400">
-              © 2025 Sainadh Macharla. All rights reserved. Built with ❤️ using
-              Next.js
-            </p>
+          {/* Email */}
+          <div className="flex items-center gap-4 text-gray-300">
+            <div className="p-3 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-lg">
+              <IconMail size={20} className="text-blue-400" />
+            </div>
+
+            <div>
+              <p className="font-medium text-sm sm:text-base">Email</p>
+              <p className="text-blue-400 text-sm sm:text-base break-all">
+                macharlasainadh2506@gmail.com
+              </p>
+            </div>
           </div>
-        </footer>
+
+          {/* Location */}
+          <div className="flex items-center gap-4 text-gray-300">
+            <div className="p-3 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-lg">
+              <IconMapPin size={20} className="text-blue-400" />
+            </div>
+
+            <div>
+              <p className="font-medium text-sm sm:text-base">Location</p>
+              <p className="text-blue-400 text-sm sm:text-base">
+                Mangalagiri, Andhra Pradesh, India
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        {/* Social Buttons */}
+        <div className="flex gap-4">
+          <motion.a
+            href="https://github.com/MSVVSSAINADH"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-gradient-to-br from-gray-700/50 to-gray-800/50 rounded-lg border border-gray-600/30 hover:border-blue-500/50 transition-all duration-300"
+            whileHover={{ scale: 1.1, y: -2 }}
+          >
+            <IconBrandGithub
+              size={24}
+              className="text-blue-400"
+            />
+          </motion.a>
+
+          <motion.a
+            href="sairesume2.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-gradient-to-br from-gray-700/50 to-gray-800/50 rounded-lg border border-gray-600/30 hover:border-blue-500/50 transition-all duration-300"
+            whileHover={{ scale: 1.1, y: -2 }}
+          >
+            <IconDownload
+              size={24}
+              className="text-blue-400"
+            />
+          </motion.a>
+        </div>
+      </motion.div>
+
+      {/* Right Section */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-sm rounded-xl p-8 border border-gray-700/30"
+      >
+        <ContactForm />
+      </motion.div>
+    </div>
+  </div>
+</section>
+
+{/* Footer */}
+<footer className="py-8 px-4 border-t border-gray-800">
+  <div className="container mx-auto max-w-6xl text-center">
+    <p className="text-gray-400">
+      © 2025 – {new Date().getFullYear()} Sainadh Macharla. All rights reserved. Built with ❤️ using
+      Next.js
+    </p>
+  </div>
+</footer>
       </main>
     </>
   );

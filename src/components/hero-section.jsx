@@ -189,6 +189,15 @@ export function HeroSection() {
                 {displayedText}
                 <span className="animate-pulse ml-1 text-blue-400">|</span>
               </h2>
+              <motion.p
+                className="text-gray-400 text-base lg:text-lg max-w-lg leading-relaxed"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.9, duration: 0.6, ease: "easeOut" }}
+              >
+                Turning ideas into intelligent web apps.{" "}
+                <span className="text-blue-400 font-medium">Open to internships.</span>
+              </motion.p>
             </motion.div>
 
             {/* Social Icons and Resume Button */}
@@ -252,7 +261,7 @@ export function HeroSection() {
 
               {/* Resume Button */}
               <motion.a
-                href="sairesume.pdf"
+                href="sairesume2.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white bg-gradient-to-r from-[#007BFF] to-[#6F00FF] hover:from-[#6F00FF] hover:to-[#007BFF] px-8 py-3 rounded-full font-semibold shadow-[0_0_20px_#007BFF80] hover:shadow-[0_0_30px_#6F00FF80] transition-all duration-300 flex items-center space-x-2"
