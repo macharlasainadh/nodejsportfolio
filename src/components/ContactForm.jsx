@@ -30,7 +30,11 @@ export default function ContactForm() {
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
-        setResult({ success: true, message: "Message sent successfully!" });
+        setResult({
+          success: true,
+          message: "Message sent successfully!",
+        });
+
         form.current.reset();
       })
       .catch(() => {
@@ -44,7 +48,7 @@ export default function ContactForm() {
 
   return (
     <form ref={form} onSubmit={sendEmail} className="space-y-6">
-      
+
       {/* Honeypot field (anti-spam) */}
       <input
         type="text"
@@ -54,8 +58,12 @@ export default function ContactForm() {
         autoComplete="off"
       />
 
+      {/* Name */}
       <div>
-        <label className="block text-white font-medium mb-2">Name</label>
+        <label className="block text-white font-medium mb-2">
+          Name
+        </label>
+
         <input
           name="name"
           type="text"
@@ -65,8 +73,12 @@ export default function ContactForm() {
         />
       </div>
 
+      {/* Email */}
       <div>
-        <label className="block text-white font-medium mb-2">Email</label>
+        <label className="block text-white font-medium mb-2">
+          Email
+        </label>
+
         <input
           name="email"
           type="email"
@@ -76,10 +88,14 @@ export default function ContactForm() {
         />
       </div>
 
+      {/* Subject */}
       <div>
-        <label className="block text-white font-medium mb-2">Subject</label>
+        <label className="block text-white font-medium mb-2">
+          Subject
+        </label>
+
         <input
-          name="title"
+          name="subject"
           type="text"
           required
           placeholder="Subject"
@@ -87,8 +103,12 @@ export default function ContactForm() {
         />
       </div>
 
+      {/* Message */}
       <div>
-        <label className="block text-white font-medium mb-2">Message</label>
+        <label className="block text-white font-medium mb-2">
+          Message
+        </label>
+
         <textarea
           name="message"
           rows={5}
@@ -98,6 +118,14 @@ export default function ContactForm() {
         />
       </div>
 
+      {/* Hidden Date & Time */}
+      <input
+        type="hidden"
+        name="time"
+        value={new Date().toLocaleString()}
+      />
+
+      {/* Submit Button */}
       <motion.button
         type="submit"
         disabled={loading}
@@ -108,10 +136,13 @@ export default function ContactForm() {
         {loading ? "Sending..." : "Send Message"}
       </motion.button>
 
+      {/* Success/Error Message */}
       {result && (
         <div
           className={`mt-4 text-center font-medium ${
-            result.success ? "text-[#00FFFF]" : "text-[#FF4B91]"
+            result.success
+              ? "text-[#00FFFF]"
+              : "text-[#FF4B91]"
           }`}
         >
           {result.message}
